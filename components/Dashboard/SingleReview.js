@@ -2,8 +2,9 @@ import Image from "next/image";
 import DeleteReview from "./DeleteReview";
 import EditReviewModal from "./EditReviewModal";
 
-const SingleReview = ({ reviewStr }) => {
-  const review = JSON.parse(reviewStr);
+const SingleReview = ({ review }) => {
+
+
 
   return (
     <div className="p-5 space-y-6 border text-white group relative">

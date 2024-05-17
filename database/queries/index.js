@@ -1,4 +1,3 @@
-import { googleReviewsSchema } from "@/models/GoogleReviews";
 import HomePageModel from "@/models/HomePageModel";
 import Services from "@/models/Services";
 
@@ -14,8 +13,21 @@ export async function getServicesById(id) {
   return service;
 }
 
+
+
 export async function getAllReviews() {
+
+  //   let homePage = await HomePageModel.findOne();
+
+  // try {
+  //   // Find the review by ID and update its fields
+  //   const review = homePage.googleReviews.id(result.reviewId);
+  
+  
+  
   const reviews = await HomePageModel.find().lean();
+
+
 
   return reviews;
 }
