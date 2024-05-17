@@ -1,7 +1,11 @@
 import AddReviewForm from "@/components/Dashboard/AddReviewForm";
+import { getAllReviews } from "@/database/queries";
 
 const DashboardHomePage = async () => {
-  // const reviews = await getAllReviews();
+  const reviews = await getAllReviews();
+
+  console.log("🚀 ~ reviews:", reviews)
+
   // const allReviews = reviews[0]?.googleReviews;
 
   return (
